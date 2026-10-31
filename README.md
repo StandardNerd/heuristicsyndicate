@@ -258,11 +258,13 @@ rake test
 
 | Document | Description |
 | :--- | :--- |
-| [**Architecture Decision Record (ADR 2.1)**](./architecture_decision_record.md) | Authoritative specification of ADRs 001–013, layered architecture, security boundaries, governance contracts, and roadmap. |
-| [**Spike 1 & Spike 2 Specification**](./spike1_spike2.md) | Design and test matrices (`LLM-01..12`, `REC-01..12`, and §5 E2E integration) for the `RubyLLMAdapter` and Crash Recovery prototypes. |
+| [**Maintainer Onboarding Tutorial**](./docs/maintainer_onboarding.md) | Comprehensive onboarding guide for new maintainers covering Ruby gem concepts, module-by-module architecture, workflow, improvement roadmap, and release checklist. |
+| [**Technical Walkthrough**](./docs/walkthrough.md) | Step-by-step developer guide covering security context setup, agents, tools, components, durable pipelines, crash recovery, governance, auditing, and Haystack 3.x migration. |
+| [**Architecture Decision Record (ADR 2.1)**](./docs/architecture_decision_record.md) | Authoritative specification of ADRs 001–013, layered architecture, security boundaries, governance contracts, and roadmap. |
+| [**Spike 1 & Spike 2 Specification**](./docs/spike1_spike2.md) | Design and test matrices (`LLM-01..12`, `REC-01..12`, and §5 E2E integration) for the `RubyLLMAdapter` and Crash Recovery prototypes. |
 | [**Spike 1 & Spike 2 Results**](./docs/spike-results.md) | Empirical findings from `ruby_llm` 2.1 verification, test matrix outcomes, and final answers to the 6 architectural questions. |
 | [**AI Sysadmin Agent (Werkbank) Use Case**](./use_case_werkbank.md) | Business and operational specification for cross-system incident analysis and approval-gated remediation. |
-| [**Hybrid RAG & Blueprint Notes**](./hybrid_rag.md) | Initial exploration notes on RubyLLM, MongoDB `$rankFusion`, Docling, and sysadmin agent patterns. |
+| [**Hybrid RAG & Blueprint Notes**](./docs/hybrid_rag.md) | Initial exploration notes on RubyLLM, MongoDB `$rankFusion`, Docling, and sysadmin agent patterns. |
 
 ---
 
@@ -274,16 +276,18 @@ rake test
 ├── LICENSE
 ├── README.md
 ├── Rakefile
-├── architecture_decision_record.md
-├── spike1_spike2.md
 ├── use_case_werkbank.md
-├── hybrid_rag.md
 ├── heuristic_syndicate.gemspec
 ├── docs/
-│   └── spike-results.md
-├── drafts/
-│   ├── phase1_analysis.md
-│   └── phase2_design.md
+│   ├── architecture_decision_record.md
+│   ├── hybrid_rag.md
+│   ├── maintainer_onboarding.md
+│   ├── spike-results.md
+│   ├── spike1_spike2.md
+│   ├── walkthrough.md
+│   └── drafts/
+│       ├── phase1_analysis.md
+│       └── phase2_design.md
 ├── examples/
 │   └── werkbank/
 │       └── incident_workflow.rb
